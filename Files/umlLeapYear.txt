@@ -17,3 +17,29 @@ printIsLeapYear --> User: Prnt "yay"
 isLeapYear -> printIsLeapYear: LeapYear False
 printIsLeapYear --> User: Prnt "nay"
 @enduml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
