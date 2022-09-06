@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using MyApp;
+
+Console.WriteLine("Input year: ");
+var input = Console.ReadLine();
+if(input != null) Year.printIsLeapYear(input);
+
+
+
+
+
