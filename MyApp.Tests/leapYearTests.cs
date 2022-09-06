@@ -81,8 +81,6 @@ public class leapYearTests
         // Act
             Year.printIsLeapYear(testIntString);
             
-            
-
         // Assert
         var output = writer.GetStringBuilder().ToString().TrimEnd();
         output.Should().Be("Does not support years before 1582");
