@@ -1,0 +1,19 @@
+@startuml
+actor User
+participant printIsLeapYear
+participant isLeapYear
+participant Exceptions
+
+User --> printIsLeapYear: Input Year (String)
+printIsLeapYear -> Exceptions: Attempt int.Parse
+Exceptions -> printIsLeapYear: Fail: Throw Ex.
+printIsLeapYear -> User: Fail: Prnt Ex.Msg
+printIsLeapYear -> isLeapYear: Submit parsed int
+isLeapYear -> Exceptions: Check if int < 1582
+Exceptions -> printIsLeapYear: If True: Throw Ex.
+printIsLeapYear --> User: Prnt Ex.Msg.
+isLeapYear -> printIsLeapYear: LeapYear True
+printIsLeapYear --> User: Prnt "yay"
+isLeapYear -> printIsLeapYear: LeapYear False
+printIsLeapYear --> User: Prnt "nay"
+@enduml
